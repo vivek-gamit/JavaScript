@@ -1,0 +1,102 @@
+ 🧭Chapter 4: Control Flow
+ (JavaScript – Learn Everything Series by Sheryians Coding School)
+ 14/36
+28/06/2025, 15:10
+ Complete JS Course Syllabus
+ 🚦 What is Control Flow?
+ Control flow decides which code runs, when it runs, and how many times it runs.
+ It's like decision-making + direction in your JavaScript program.
+ If operators are the verbs, control flow is the traffic signal.
+ 🧱 if, else if, else
+ js
+ if (condition) {
+ // runs if condition is true
+ } else if (anotherCondition) {
+ // runs if first was false, second is true
+ } else {
+ // runs if none are true
+ }
+ ✅ Example:
+ js
+ let marks = 78;
+ if (marks >= 90) {
+ console.log("A");
+ } else if (marks >= 75) {
+ console.log("B");
+ } else {
+ console.log("C");
+ }
+ 🌀 switch-case
+ Great for checking one variable against many values.
+ js
+ 15/36
+28/06/2025, 15:10
+ Complete JS Course Syllabus
+ switch (value) {
+ case value1:
+ // code
+ break;
+ case value2:
+ // code
+ break;
+ default:
+ // fallback
+ }
+ ✅ Example:
+ js
+ let fruit = "apple";
+ switch (fruit) {
+ case "banana":
+ console.log("Yellow");
+ break;
+ case "apple":
+ console.log("Red");
+ break;
+ default:
+ console.log("Unknown");
+ }
+ 🔁 Early Return Pattern
+ Used in functions to exit early if some condition fails.
+ js
+ function checkAge(age) {
+ if (age < 18) return "Denied";
+ return "Allowed";
+ }
+ 16/36
+28/06/2025, 15:10
+ Complete JS Course Syllabus
+ This avoids deep nesting and makes logic cleaner.
+ ⚠ Common Confusions
+ switch-case
+ executes all cases after a match unless you 
+else if
+ chain works top-down — order matters
+ You can use truthy/falsy values directly in 
+break
+ if
+ 🧠 Mindset
+ Control flow = conditional storytelling.
+ It helps your program make choices and respond differently to different inputs.
+ Write readable branches. Avoid nesting too deep — use early return if needed.
+ 🧪 Practice Zone
+ 1. Student grade logic:
+ js
+ // Write a program that prints A, B, C, D, or F based on marks
+ 2. Rock-paper-scissors:
+ js
+ // Given player1 and player2's choice, print winner or draw
+ 3. Login message:
+ js
+ 17/36
+28/06/2025, 15:10
+ Complete JS Course Syllabus
+ let isLoggedIn = true;
+ let isAdmin = false;
+ // Show different messages based on combination
+ 4. Weather advice:
+ js
+ let weather = "rainy";
+ // Use switch-case to print what to wear
+ 5. Age checker:
+ js
+ // Return "Kid", "Teen", "Adult", or "Senior"
